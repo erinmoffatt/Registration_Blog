@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Blog</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <!--===============================================================================================-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/tablestyle.css">
+    <!--===============================================================================================-->
+    <script type="text/javascript" src="js/table_script.js"></script>
+    <!--===============================================================================================-->
+</head>
+
+<body>
+    <div class="hero">
+        <div class="diagonal-hero-bg"></div>
+        <div class="typewriter">
+            <!--Text Animation Left to Right typewriter-->
+            <h1>This is a basic blog.</h1>
+        </div>
+    </div>
+
+    <!--Add, Edit, Delete, View Blog Table-->
+    <div class="hero2">
+        <table id="data_table" class="roundedcorners">
+            <tr>
+                <th>Title</th>
+                <th>Content</th>
+                <th>Tags</th>
+                <th>Date</th>
+                <th></th>
+            </tr>
+
+            <tr id="row1"></tr>
+            <td id="title_row1">First blog!!</td>
+            <td id="content_row1">How to create functional websites using HTML CSS and
+                JavaScript</td>
+            <td id="tag_row1">#HTML #CSS #JavaScript</td>
+            <td id="date_row1" width="10px">2021-01-01</td>
+            <td width="10px">
+                <!-- Call to action buttons -->
+                <input type="button" id="edit_button1" value="Edit" class="edit" onclick="edit_row('1')">
+                <input type="button" id="save_button1" value="Save" class="save" onclick="save_row('1')">
+                <input type="button" value="Delete" class="delete" onclick="delete_row('1')">
+                <input type="button" id="view_button1" value="View" class="view" onclick="view_row('1')">
+            </td>
+            </tr>
+
+            <tr id="row2">
+                <td id="title_row2">2nd blog</td>
+                <td id="content_row2">Here are some cool CSS Animations.</td>
+                <td id="tag_row2">#CSS #Animations</td>
+                <td id="date_row2" width="10px">2021-01-13</td>
+                <td width="10px">
+                    <input type="button" id="edit_button2" value="Edit" class="edit" onclick="edit_row('2')">
+                    <input type="button" id="save_button2" value="Save" class="save" onclick="save_row('2')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('2')">
+                    <input type="button" id="view_button2" value="View" class="view" onclick="view_row('2')">
+                </td>
+            </tr>
+
+            <tr id="row3">
+                <td id="title_row3">Hello World</td>
+                <td id="content_row3">How to create a React Application.</td>
+                <td id="tag_row3">#React</td>
+                <td id="date_row3" width="10px">2021-01-21</td>
+                <td width="10px">
+                    <input type="button" id="edit_button3" value="Edit" class="edit" onclick="edit_row('3')">
+                    <input type="button" id="save_button3" value="Save" class="save" onclick="save_row('3')">
+                    <input type="button" value="Delete" class="delete" onclick="delete_row('3')">
+                    <input type="button" id="view_button3" value="View" class="view" onclick="view_row('3')">
+                </td>
+            </tr>
+
+            <tr>
+                <td><input type="text" id="new_title" placeholder="enter title"></td>
+                <td><input type="text" id="new_content" size="50" placeholder="enter content"></td>
+                <td><input type="text" id="new_tag" placeholder="#entertag"></td>
+                <td><input type="date" id="new_date" style="font-size: small;"></td>
+                <td><input type="button" class="add" onclick="add_row();" value="Add Row"></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <!--View Blog Table using template-->
+    <!-- reference: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template -->
+    <div class="wrapper_view">
+
+        <table id="producttable">
+            <tbody id="blog_result" style="height: 50px;">
+                <!-- to be populated with the template -->
+            </tbody>
+
+        </table>
+
+
+        <template id="productrow">
+            <style>
+                .producttable {
+                    padding: 5px;
+                }
+            </style>
+
+            <tr class="temp"></tr>
+            <tr class="temp2"></tr>
+            <tr></tr>
+            <tr class="temp3"></tr>
+            <tr></tr>
+            <tr class="temp4"></tr>
+            <tr></tr>
+            <tr></tr>
+        </template>
+    </div>
+
+    <div class="hero3">
+        <!--Diagonal Animation-->
+        <div class="bg1"></div>
+        <div class="bg1 bg2"></div>
+        <div class="bg1 bg3"></div>
+    </div>
+
+</body>
+
+</html>

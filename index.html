@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--===============================================================================================-->
+    <script type="text/javascript">
+        function submitClick() {
+            var formValid = document.forms["post-form"].checkValidity();
+            return formValid;
+        }
+    </script>
+    <!--===============================================================================================-->
+</head>
+
+<body>
+    <main>
+        <div class="container" onclick="onclick">
+            <div class="top"></div>
+            <div class="bottom"></div>
+            <div class="center">
+                <form id="post-form" action="table.html" method=get>
+                    <h2 style="text-align: center;">Register</h2>
+                    <input type="username" placeholder="user name" required />
+                    <input type="password" placeholder="password" required />
+                    <input type="fname" placeholder="first name" required />
+                    <input type="lname" placeholder="last name" required />
+                    <label for="textarea">Bio</label><textarea cols="40" rows="2" name="textarea" id="textarea"
+                        placeholder="tell us about yourself..."></textarea>
+                    <div style="text-align: center;">
+                        <button class="input-button" onclick="submitClick();">Sign Up</button>
+                    </div>
+
+
+                </form>
+
+                <!-- open new window on same screen: -->
+                <!-- <button class="input-button" onclick="window.location.href = 'table.html';">Sign Up</button> -->
+                <!-- open new window: -->
+                <!-- <button class="input-button" onclick="window.open('http://www.google.com');">Sign Up</button> -->
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
