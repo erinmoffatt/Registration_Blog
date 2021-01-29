@@ -1,6 +1,6 @@
 # Erin Mofffatt Registration_Blog
 The coding was done in Microsoft Visual Code.
-Table of Contents The project is divided into 3 folders, index.html file and a Readme file (REAME.md). 
+Table of Contents The project is divided into 3 folders, html files and a Readme file (REAME.md). 
 The folders are: 
 css: stores the style files for the pages 
 img: stores logos, pictures to use in the webpages 
